@@ -1,2 +1,2 @@
-# FreshMart-WebApplication
-Fully responsive Web Application Created With HTML,,CSS,PHP,JavaScript
+# Project-Freshmart Online Web Application
+ Full responsive Web Application Developed With html,css,php,Javascript
