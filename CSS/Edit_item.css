@@ -1,0 +1,479 @@
+:root{
+    --blue:#2980b9;
+    --red:tomato;
+    --orange:orange;
+    --black:#333;
+    --white:#fff;
+    --bg-color:#eee;
+    --dark-bg:rgba(0,0,0,.7);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid #999;
+ }
+ 
+ *{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+ }
+
+
+ nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: #032e4b;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+   }
+   nav .navbar{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-width: 100%;
+    background: #032e4b;
+   }
+  
+   nav .navbar .menu{
+   display: flex;
+   }
+   .navbar .menu li{
+   list-style: none;
+   display: inline-block;
+   list-style: none;
+   font-size: 2rem;
+   padding: 0 10px;
+   margin:20px;
+   cursor: pointer;
+   position: relative;
+   }
+   .navbar .menu li a{
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   text-decoration: none;
+   }
+  
+   /*<Menu Hover>*/
+   nav ul li:after{
+   content: '';
+   width: 0;
+   height: 3px;
+   background: #2192ff;
+   position: absolute;
+   left: 0;
+   bottom: -10px;
+   transition: 0.5s;
+   }
+   nav ul li:hover::after{
+   width:100%;
+   }
+  
+  
+  /*</Menue Hover>*/
+  
+  
+  
+  
+  /*<----Sidebar--->*/
+  .sidebar{
+    position: flex;
+    margin-top: 100px;
+    height: 800px;
+    width: 240px;
+    background: #032e4b;
+    transition: all 0.5s ease;
+  }
+  .sidebar.active{
+    width: 60px;
+  }
+  .sidebar .logo-details{
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  .sidebar .logo-details i{
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+    min-width: 60px;
+    text-align: center
+  }
+  .sidebar .logo-details .logo_name{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .sidebar .nav-links{
+    margin-top: 10px;
+  }
+  .sidebar .nav-links li{
+    position: relative;
+    list-style: none;
+    height: 50px;
+  }
+  .sidebar .nav-links li a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+  .sidebar .nav-links li a.active{
+    background: #081D45;
+  }
+  .sidebar .nav-links li a:hover{
+    background: #081D45;
+  }
+  .sidebar .nav-links li i{
+    min-width: 60px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+  }
+  .sidebar .nav-links li a .links_name{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  .sidebar .nav-links .log_out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  /*<----Sidebar--->*/
+  
+  /*<----header---->*/
+    nav{
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100px;
+     background: #032e4b;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    nav .navbar{
+     display: flex;
+     align-items: center;
+     height: 100%;
+     max-width: 100%;
+     background: #032e4b;
+    }
+  
+    nav .navbar .menu{
+      display: flex;
+    }
+    .navbar .menu li{
+      list-style: none;
+      display: inline-block;
+      list-style: none;
+      font-size: 2rem;
+      padding: 0 10px;
+      margin:20px;
+      cursor: pointer;
+      position: relative;
+    }
+    .navbar .menu li a{
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+  
+  
+    /*<Menu Hover>*/
+    nav ul li:after{
+      content: '';
+      width: 0;
+      height: 3px;
+      background: #2192ff;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      transition: 0.5s;
+      }
+      nav ul li:hover::after{
+      width:100%;
+      }
+  
+    
+    /*</Menue Hover>*/
+  
+    
+    
+    
+      /*</------Header----->*/
+    
+
+
+ 
+      .container{
+       
+         top: -750px;
+         margin-right: 300px;
+         left: 300px;
+         max-width: 750px;
+         background: #342394;
+         border-radius: 12px;
+      
+         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+         position: relative;
+       }
+       .container::before{
+         content: '';
+        
+         left: 0;
+         top: 0;
+         height: 100%;
+         width: 100%;
+         border-radius: 1px;
+         clip-path: circle(65% at right 35%);
+       }
+       .container .box.one{
+         padding: 35px 5px 0px 35px;
+       }
+       
+ 
+ section{
+    padding:2rem;
+ }
+ 
+ 
+
+ .box {
+   font-size: 8px;
+   background: #fff;
+   margin:10px;
+   border-radius: 10px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+   }
+ 
+
+  
+   .box input {
+   
+   outline: none;
+   font-size: 8px;
+   font-weight: 200;
+   border: none;
+   padding: 0 80px 0 20px;
+   background-color: transparent;
+   }
+
+
+
+
+
+ 
+ .btn,
+ .option-btn,
+ .delete-btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--blue);
+    color:var(--white);
+    font-size: 1.2rem;
+    padding:1rem 2.5rem;
+    border-radius: .25rem;
+    cursor: pointer;
+    margin-top: .25rem;
+ }
+ 
+ .btn:hover,
+ .option-btn:hover,
+ .delete-btn:hover{
+    background-color: var(--black);
+ }
+ 
+ .option-btn i,
+ .delete-btn i{
+    padding-right: .5rem;
+ }
+ 
+ .option-btn{
+    background-color: var(--orange);
+ }
+ 
+ .delete-btn{
+    margin-top: 0;
+    background-color: var(--red);
+ }
+ 
+ .message{
+    background-color: var(--blue);
+    position: sticky;
+    top:0; left:0;
+    z-index: 9000;
+    border-radius: .25rem;
+    background-color: var(--white);
+    padding:1.2rem 1.6rem;
+    margin:0 auto;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:1.25rem;
+ }
+ 
+ .message span{
+    font-size: 1.6rem;
+    color:var(--black);
+ }
+ 
+ .message i{
+    font-size: 2rem;
+    color:var(--black);
+    cursor: pointer;
+ }
+ 
+ .message i:hover{
+    color:var(--red);
+ }
+ 
+ 
+ .add-product-form{
+    max-width: 40rem;
+    background-color: var(--bg-color);
+    border-radius: .25rem;
+    padding:1.6rem;
+    margin:0 auto;
+    margin-top: 1.6rem;
+ }
+ 
+ .add-product-form h3{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color:var(--black);
+    text-transform: uppercase;
+    text-align: center;
+ }
+ 
+ .add-product-form .box{
+    text-transform: none;
+    padding:1rem 1.2rem;
+    font-size: 1.2rem;
+    color:var(--black);
+    border-radius: .5rem;
+    background-color: var(--white);
+    margin:1rem 0;
+    width: 100%;
+ }
+ 
+ .display-product-table table{
+    width: 100%;
+    text-align: center;
+ }
+ 
+ .display-product-table table thead th{
+    padding:1rem;
+    font-size: 1.5rem;
+    background-color: var(--black);
+    color:var(--white);
+ }
+ 
+ .display-product-table table td{
+    padding:1.2rem;
+    font-size: 1.5rem;
+    color:var(--white);
+ }
+ 
+ .display-product-table table td:first-child{
+    padding:0;
+ }
+ 
+ .display-product-table table tr:nth-child(even){
+    background-color: var(--bg-color);
+ }
+ 
+ .display-product-table .empty{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background-color: var(--bg-color);
+    color:var(--black);
+    font-size: 1.5rem;
+    padding:1.2rem;
+ }
+ 
+ .edit-form-container{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    background-color: var(--dark-bg);
+    padding:1.5rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+ }
+ 
+ .edit-form-container form{
+    width: 40rem;
+    border-radius: .25rem;
+    background-color: var(--white);
+    text-align: center;
+    padding:1.5rem;
+ }
+ 
+ .edit-form-container form .box{
+    width: 100%;
+    background-color: var(--bg-color);
+    border-radius: .25rem;
+    margin:1rem 0;
+    font-size: 1.3rem;
+    color:var(--black);
+    padding:1rem 1.2rem;
+    text-transform: none;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ /* media queries  */
+ 
+ @media (max-width:800px){
+ 
+    html{
+       font-size: 40%;
+    }
+ 
+ }
+ 
+ @media (max-width:650px){
+ 
+ 
+ 
+    .display-product-table{
+       overflow-x: scroll;
+    }
+ 
+    .display-product-table table{
+       width: 80rem;
+    }
+ 
+ }
+ 
+ @media (max-width:400px){
+ 
+    html{
+       font-size: 40%;
+    }
+ 
+    .heading{
+       font-size: 2rem;
+    }
+ 
+    .product .box-container{
+       grid-template-columns: 1fr;
+    }
+ 
+ }
